@@ -19,6 +19,10 @@ public class atividade {
 		while (i < fiados.length) {
 			System.out.print("Informe o valor da compra: ");
 			fiados[i] = Integer.valueOf(scanner.nextLine());
+			while (fiados[i] <= 0) {
+				System.out.print("Valor invalido. Informe o valor da compra: ");
+				fiados[i] = Integer.valueOf(scanner.nextLine());				
+			}
 			i++;
 		}
 		
