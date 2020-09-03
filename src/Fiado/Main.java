@@ -7,6 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 
 		Consumidor consumidor = new Consumidor();
+		consumidor.fiados = new int[10];
 		
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("Informe o nome do cliente: ");
@@ -22,8 +23,6 @@ public class Main {
 		else {
 			System.out.println("Cliente " + consumidor.nome + " deve: " + total);
 		}
-		
-		System.out.println("Cliente " + consumidor.nome + " deve:" + total);
 
 	}
 	
