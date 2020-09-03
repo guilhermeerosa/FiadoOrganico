@@ -1,4 +1,4 @@
-package Fiado;
+package atividade;
 
 import java.util.Scanner;
 
