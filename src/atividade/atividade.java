@@ -8,10 +8,10 @@ public class atividade {
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.print("Informe o numero de fiados: ");
-		Integer f = Integer.valueOf(scanner.nextLine());
 		System.out.print("Informe o nome do cliente: ");
 		String nome = scanner.nextLine();
+		System.out.print("Informe o numero de fiados: ");
+		Integer f = Integer.valueOf(scanner.nextLine());
 		
 		int[] fiados = new int[f];
 		
