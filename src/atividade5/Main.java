@@ -7,10 +7,11 @@ public class Main {
 	public static void main(String[] args) {
 		
 		Scanner scanner = new Scanner(System.in);
+		
 		System.out.print("Informe o nome do cliente: ");
 		String nome = scanner.nextLine();
 				
-		System.out.print("Informe seu telefone: ");
+		System.out.print("Informe o telefone do cliente: ");
 		String fone = scanner.nextLine();
 		
 		System.out.print("Informe o numero de compras: ");

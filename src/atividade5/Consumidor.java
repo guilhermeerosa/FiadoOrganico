@@ -20,9 +20,9 @@ public class Consumidor {
 		return this.nome;
 	}
 	
-//	public void setNome(String nome) {
-//		this.nome = nome;
-//	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
 	
 	public void registrarFiado(int valor) {
 		this.fiados[posicao] = valor;
@@ -31,8 +31,8 @@ public class Consumidor {
 	
 	public int getFiado() {
 		int total = 0;
-		for (int fiado : fiados) {
-			total += fiado;
+		for (int valor : fiados) {
+			total += valor;
 		}
 		return total;
 	}
