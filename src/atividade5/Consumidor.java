@@ -6,11 +6,13 @@ public class Consumidor {
 	private String nome;
 	private int[] fiados;
 	private int posicao = 0;
+	private String fone;
 	
 	//Construtor
-	public Consumidor (String nome) {
+	public Consumidor (String nome, String fone, int compras) {
 		this.nome = nome;
-		this.fiados = new int [10];
+		this.fone = fone;
+		this.fiados = new int [compras];
 	}
 	
 	//GETTER e SETTER
@@ -18,9 +20,9 @@ public class Consumidor {
 		return this.nome;
 	}
 	
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+//	public void setNome(String nome) {
+//		this.nome = nome;
+//	}
 	
 	public void registrarFiado(int valor) {
 		this.fiados[posicao] = valor;
@@ -33,6 +35,14 @@ public class Consumidor {
 			total += fiado;
 		}
 		return total;
+	}
+	
+	public String getFone() {
+		return this.fone;
+	}
+	
+	public void setFone(String fone) {
+		this.fone = fone;
 	}
 
 }

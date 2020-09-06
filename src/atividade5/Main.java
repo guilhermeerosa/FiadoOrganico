@@ -5,17 +5,18 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-
-		
-		//consumidor.fiados = new int[10];
 		
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("Informe o nome do cliente: ");
 		String nome = scanner.nextLine();
-		Consumidor consumidor = new Consumidor(nome);
+				
+		System.out.print("Informe seu telefone: ");
+		String fone = scanner.nextLine();
 		
 		System.out.print("Informe o numero de compras: ");
 		Integer compras = Integer.valueOf(scanner.nextLine());
+		
+		Consumidor consumidor = new Consumidor(nome, fone, compras);
 		
 		int c = 0;
 		while(c < compras) {
@@ -33,6 +34,8 @@ public class Main {
 		else {
 			System.out.println("Cliente " + consumidor.getNome() + " deve: " + total + " reais");
 		}
+		
+		System.out.println("Telefone para contato é: " + consumidor.getFone());
 
 	}
 
